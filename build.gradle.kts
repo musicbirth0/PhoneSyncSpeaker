@@ -1,4 +1,15 @@
-plugins {
-    id("com.android.application") version "8.7.3" apply false
-    id("org.jetbrains.kotlin.android") version "2.0.21" apply false
+plugins { id("com.android.application"); id("org.jetbrains.kotlin.android") }
+
+android {
+    namespace = "com.phonesync.speaker"
+    compileSdk = 35
+    defaultConfig {
+        applicationId = "com.phonesync.speaker"
+        minSdk = 29
+        targetSdk = 35
+        versionCode = 2
+        versionName = "0.2"
+    }
 }
+
+dependencies { implementation("androidx.core:core-ktx:1.15.0") }
