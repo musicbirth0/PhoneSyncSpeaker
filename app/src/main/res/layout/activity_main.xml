@@ -1,0 +1,17 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+ <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+  <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="PHONE SYNC SPEAKER" android:textStyle="bold" android:textSize="25sp" />
+  <TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Ready — put both phones on the same Wi‑Fi / hotspot." android:textSize="16sp" />
+  <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:text="HOST PHONE" android:textStyle="bold" android:textSize="18sp" />
+  <Button android:id="@+id/hostBtn" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="8dp" android:text="START HOST / SHARE AUDIO" />
+  <TextView android:id="@+id/hostIp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Host IP will appear here" android:textIsSelectable="true" />
+  <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="SPEAKER PHONE" android:textStyle="bold" android:textSize="18sp" />
+  <EditText android:id="@+id/ipInput" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="8dp" android:hint="Enter Host IP, e.g. 192.168.43.1" android:inputType="text" />
+  <Button android:id="@+id/speakerBtn" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="8dp" android:text="CONNECT AS SPEAKER" />
+  <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="APP UPDATE" android:textStyle="bold" android:textSize="18sp" />
+  <TextView android:id="@+id/updateStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Current version: v0.2" />
+  <Button android:id="@+id/updateBtn" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="8dp" android:text="CHECK FOR UPDATE" />
+  <Button android:id="@+id/stopBtn" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="24dp" android:text="STOP" />
+  <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="Prototype v0.2 • PCM 48 kHz stereo • same local network\n\nThe Host asks Android for playback-capture permission. Apps that disallow playback capture will produce silence." />
+ </LinearLayout>
+</ScrollView>
